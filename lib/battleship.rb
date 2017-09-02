@@ -1,3 +1,5 @@
+require './lib/instructions'
+
 class Battleship
 
   def initialize
