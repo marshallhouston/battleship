@@ -1,3 +1,17 @@
+LEARNING GOALS: organization, class encapsulation, concise methods and TDD
+
+Actionable items
+1. assign ships to a player because these will be the ones that are able to be attacked
+2. once you have the pieces available for attacking, write tests for how to actually change a specific space to attacked.
+3. once you've written that a space is available to be attacked, then you can do whether something is sunk or not.
+4. once you've done if something can be sunk, then you can do some basic script for End game.
+5. validation: collection of valid placements for two unit and three unit. basic "not valid" without explaining the reason (not at that point yet)
+6. TURN structure inside battleship (or inside a specific class. what data does this hold, how does it interact?)
+
+validations: if the coordinate entered is not included in the gameboard, it is invalid (how to determine which rule it broke? don't worry about that now)
+
+Larger areas to focus on: attack a specific coordinate, ship sunk, turns, which board is being shot at on each turn. FOCUS ON TESTING! Write small, focused methods.
+
 components of the game
 1. gameboard: knows it has spaces, ships, and an owner.
 2. ships: knows the location, size, whether it's been sunk
