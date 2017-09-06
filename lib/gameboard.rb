@@ -1,6 +1,5 @@
 # 1. gameboard: knows it has spaces, ships, and an owner.
 #
-
 require './lib/board_space'
 
 class Gameboard

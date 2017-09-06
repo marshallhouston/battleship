@@ -1,10 +1,12 @@
 components of the game
-1. gameboard: actual board itself, not the displayed view. knows it has spaces, ships, and an owner.
+1. gameboard: knows it has spaces, ships, and an owner.
 2. ships: knows the location, size, whether it's been sunk
-3. individual spaces: occupied or empty (default is empty), attacked - not attacked is default?
+3. individual spaces: occupied (default is false), attacked (default is false)
 
 
 players: player1 and computer. each needs a board assigned to them so that we can check the others board.
+
+
 
 turns: 1 shot for player_1, enter coordinates, must check the board that isn't the players to see if that board's coordinate has been attacked, and if not, then if it has a ship. if it does have a ship, that space needs to be changed to attacked. it then needs to check if all the other spaces on that ship have been hit. if all are hit, then it will return a sunk message.
 1 shot for computer (randomly selected from a list of spaces that != attacked?). tells the player where this shot was and if it was a hit or a miss.

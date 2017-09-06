@@ -2,10 +2,7 @@
 
 class Ship
 
-<<<<<<< HEAD
-=======
 
->>>>>>> create-classes
   def initialize(coordinate1, coordinate2, coordinate3='')
     @coordinate1 = coordinate1
     @coordinate2 = coordinate2
@@ -20,8 +17,6 @@ class Ship
     end
   end
 
-<<<<<<< HEAD
-=======
   def occupied_coordinates
     coordinates = Array.new
     coordinates << @coordinate1
@@ -34,11 +29,10 @@ class Ship
     @occupied = true if occupied_coordinates.include?(position)
   end
 
-  
+
 
   # def sunk?
   #   #false unless all coordinates are hit
   # end
 
->>>>>>> create-classes
 end
