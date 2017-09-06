@@ -1,15 +1,10 @@
-# 3. individual spaces: occupied or empty (default is empty), attacked - not attacked is default?
-
 class BoardSpace
-attr_reader :occupied, :coordinate
+attr_accessor :occupied, :position, :attacked
 
-  def initialize(coordinate)
-    @coordinate = coordinate
+  def initialize(position)
+    @position = position
     @occupied = false
-  end
-
-  def occupied?
-    @occupied
+    @attacked = false
   end
 
 

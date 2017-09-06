@@ -22,6 +22,29 @@ class ShipTest < MiniTest::Test
     assert_equal expected, actual
   end
 
+  def test_it_can_assign_spaces_to_a_ship
+    ship = Ship.new("A1", "A2")
 
+    expected = ["A1", "A2"]
+    actual = ship.occupied_coordinates
+
+    assert_equal expected, actual
+  end
+
+  def test_it_changes_the_space_to_occupied_when_it_assigns_a_value_to_a_ship
+    ship = Ship.new("A1", "A2")
+
+    assert ship.occupied?("A1")
+    assert ship.occupied?("A2")
+    refute ship.occupied?("B3")
+  end
+
+
+
+  # def test_it_knows_if_it_is_sunk
+  #   ship = Ship.new("B3", "B4")
+  #
+  #   assert ship.sunk?
+  # end
 
 end
