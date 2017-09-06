@@ -17,7 +17,7 @@ class GameboardTest < MiniTest::Test
     assert_equal expected, actual
   end
 
-  
+
 
 
 
